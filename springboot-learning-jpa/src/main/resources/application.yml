@@ -1,0 +1,18 @@
+server:
+  port: 8083
+  servlet:
+    context-path: /jpa
+    
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springboot-learning-jpa
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL5InnoDBDialect
+  jackson:
+    serialization:
+      indent_output: true  

@@ -1,0 +1,6 @@
+swagger:
+  enabled: true
+  title: 青鸟API
+  description: 青鸟相关接口API文档
+  version: 1.0
+  basePackage: cn.jbinfo.learning.springboot  

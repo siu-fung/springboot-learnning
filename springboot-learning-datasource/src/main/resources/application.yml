@@ -1,0 +1,10 @@
+server:
+  port: 8082
+  servlet:
+    context-path: /datasource
+    
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springboot-learning-datasource
