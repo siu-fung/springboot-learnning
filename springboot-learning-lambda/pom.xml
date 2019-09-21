@@ -5,32 +5,37 @@
     <artifactId>springboot-learning</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>springboot-learning-jpa</artifactId>
-  
+  <artifactId>springboot-learning-lambda</artifactId>
+	
   <dependencies>
+  
   	<dependency>
-  		<groupId>cn.jbinfo.learning.springboot</groupId>
+    	<groupId>cn.jbinfo.learning.springboot</groupId>
     	<artifactId>springboot-starter-web</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
   	</dependency>
+  	
   	<dependency>
-  		<groupId>cn.jbinfo.learning.springboot</groupId>
+    	<groupId>cn.jbinfo.learning.springboot</groupId>
     	<artifactId>springboot-starter-swagger</artifactId>
     	<version>0.0.1-SNAPSHOT</version>
   	</dependency>
   	<dependency>
-  		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-jdbc</artifactId>
-  	</dependency>
-  	<dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-jdbc</artifactId>
+    </dependency>
+    
+    <dependency>
         <groupId>mysql</groupId>
         <artifactId>mysql-connector-java</artifactId>
     </dependency>
     
     <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-data-jpa</artifactId>
-    </dependency>
-    
-  </dependencies>
+	    <groupId>com.baomidou</groupId>
+	    <artifactId>mybatis-plus-boot-starter</artifactId>
+	    <version>3.1.0</version>
+	</dependency> 
+	
+  </dependencies>	
+
 </project>

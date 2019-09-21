@@ -1,0 +1,17 @@
+server:
+  port: 8084
+  servlet:
+    context-path: /mybatis
+    
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springboot-learning-mybatis
+  jackson:
+    serialization:
+      indent_output: true 
+      
+mybatis:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: cn.jbinfo.learning.springboot        

@@ -1,0 +1,17 @@
+server:
+  port: 8086
+  servlet:
+    context-path: /transactional
+    
+spring:
+  profiles:
+    active: dev
+  application:
+    name: springboot-learning-transactional
+  jackson:
+    serialization:
+      indent_output: true 
+      
+mybatis-plus:
+  mapper-locations: classpath:mapping/*Mapper.xml
+  type-aliases-package: cn.jbinfo.learning.springboot        

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.jbinfo.learning.springboot.system.dao.SystemUserDao">
+ 
+    <resultMap id="BaseResultMap" type="cn.jbinfo.learning.springboot.system.entity.User">
+        <result column="id" jdbcType="INTEGER" property="id" />
+        <result column="user_name" jdbcType="VARCHAR" property="userName" />
+        <result column="password" jdbcType="VARCHAR" property="password" />
+    </resultMap>
+ 
+    <select id="getById" resultType="cn.jbinfo.learning.springboot.system.entity.User">
+        select * from t_user where id = #{id}
+    </select>
+    
+    <select id="findAll" resultType="cn.jbinfo.learning.springboot.system.entity.User">
+        select * from t_user
+    </select>
+    
+    <insert id="insert" parameterType="cn.jbinfo.learning.springboot.system.entity.User">
+    insert t_user(user_name,password) values (#{userName},#{password});
+    </insert>
+ 
+</mapper>

@@ -58,5 +58,9 @@
   	<module>springboot-learning-swagger</module>
   	<module>springboot-learning-datasource</module>
   	<module>springboot-learning-jpa</module>
+  	<module>springboot-learning-mybatis</module>
+  	<module>springboot-learning-mybatisplus</module>
+  	<module>springboot-learning-transactional</module>
+  	<module>springboot-learning-lambda</module>
   </modules>
 </project>
